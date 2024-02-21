@@ -9,6 +9,7 @@ import errorHandler from "./middlewares/error-handler";
 import { DB_ADDRESS } from "./config";
 import routes from "./routes";
 import cors from "cors";
+
 const { PORT = 3001 } = process.env;
 const app = express();
 mongoose.connect(DB_ADDRESS);
